@@ -1,0 +1,297 @@
+/* ==============================================
+   GLOBAL STYLES & RESET
+   ============================================== */
+   
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Default image behavior: scale down within container and keep aspect ratio */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1.6;
+}
+
+/* Accessibility helper class for screen readers */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* ==============================================
+   TYPOGRAPHY
+   ============================================== */
+
+h1, h2, h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  outline: 2px solid #ffcc02;
+}
+
+/* ==============================================
+   LAYOUT UTILITIES
+   ============================================== */
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+/* ==============================================
+   HEADER STYLES
+   ============================================== */
+
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #404040;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 .kai {
+  color: #ffcc02;
+  display: inline-block;
+  font-size: 48px;
+}
+
+/* Navigation Styles */
+.header nav {
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.header nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-left: 25px;
+}
+/* ==============================================
+   HERO SECTION
+   ============================================== */
+
+.hero-img {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("./images/ashenWastes.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Ensure background image has proper contrast for overlaid text */
+  position: relative;
+}
+
+/* ==============================================
+   MAIN CONTENT LAYOUT
+   ============================================== */
+
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* Content Section Styles - Consolidated for efficiency */
+.info {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  background-color: #404040;
+  color: #ffffff;
+}
+
+.info img {
+  max-height: 200px;
+  height: auto;
+  width: auto;
+}
+
+/* ==============================================
+   SIDEBAR - TREASURE CHESTS
+   ============================================== */
+
+.items {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  background-color: #404040;
+}
+
+/* Consolidated treasure chest styles */
+.item-golden-sun,
+.item-frostbite-chest,
+.item-mystic-chest {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+/* Consolidated treasure chest image styles */
+.items article img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+  border-radius: 5px; /* Added for better visual appeal */
+}
+
+/* Treasure chest lists */
+.items ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items li {
+  padding: 5px 0;
+  text-align: center;
+  border-bottom: 1px solid #666;
+}
+
+.items li:last-child {
+  border-bottom: none;
+}
+
+/* ==============================================
+   FOOTER STYLES
+   ============================================== */
+
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  background-color: #404040;
+  margin-top: 20px;
+}
+
+.footer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* ==============================================
+   RESPONSIVE DESIGN CONSIDERATIONS
+   ============================================== */
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header nav {
+    padding-top: 20px;
+  }
+  
+  .content {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .items {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+  
+  .float-left,
+  .float-right {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  
+  .info {
+    height: auto;
+    padding: 30px 20px;
+  }
+}
+
+/* ==============================================
+   ACCESSIBILITY ENHANCEMENTS
+   ============================================== */
+
+/* Focus indicators for keyboard navigation */
+button:focus,
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #ffcc02;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .header,
+  .info,
+  .items,
+  .footer {
+    border: 2px solid #ffffff;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/style_refactored.css" />
+    <!-- Improved descriptive title for accessibility -->
+    <title>The Legacy of Kai - Epic Fantasy Adventure Story</title>
+  </head>
+
+  <body>
+    <!-- Semantic header element instead of div -->
+    <header class="header">
+      <h1>The Legacy of <span class="kai">Kai</span></h1>
+      <!-- Semantic navigation element -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#dragons">The Dragons</a>
+          </li>
+          <li>
+            <a href="#humans">The Humans</a>
+          </li>
+          <li>
+            <a href="#locations">The Realm</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero section with accessibility considerations -->
+    <section class="hero-img" role="img" aria-label="The Ashen Wastes - a desolate landscape where Kai's adventure unfolds">
+    </section>
+
+    <!-- Main content wrapped in semantic main element -->
+    <main class="content">
+      <!-- Each content section uses semantic section element -->
+      <section id="dragons" class="info">
+        <!-- Accessible alt text describing the image content -->
+        <img src="./assets/images/kai.jpg" class="float-left" alt="Kai, a powerful dragon-human hybrid with piercing eyes, representing the bridge between two worlds" />
+        <h2>Forged by Flame</h2>
+        <p>
+          Kai's bloodline runs deep—his father, Fillipi, a dragon of prophecy
+          and power; his mother, Luna, descended from celestial beings. Yet
+          Kai's destiny was not to dominate, but to bridge worlds. Among
+          dragons, he is both revered and questioned. His heart belongs not only
+          to fire, but to humanity, and his bond with Zara—fierce, loyal, and
+          radiant—grounds him as shadows rise.
+        </p>
+      </section>
+
+      <section id="humans" class="info">
+        <!-- Accessible alt text describing Finn -->
+        <img src="./assets/images/finn.jpg" class="float-right" alt="Finn, a brave Knight of the Eternal Flame in armor, Kai's loyal childhood friend and battle companion" />
+        <h2>Bound by Honor</h2>
+        <p>
+          The Knights of the Eternal Flame, once sworn to slay dragons, found a
+          brother in Kai. He saved their leader and earned their trust. Among
+          them, he trained, fought, and laughed—especially with Finn, a bold
+          warrior whose bond with Kai was forged in childhood. Together, they
+          faced foes, won wars, and dreamed of peace, even as the threat of
+          betrayal loomed ever closer.
+        </p>
+      </section>
+
+      <section id="locations" class="info">
+        <!-- Accessible alt text describing the location -->
+        <img src="./assets/images/forgottenIsle.jpg" class="float-left" alt="The Forgotten Isle shrouded in mist, an ancient and mysterious location in the realm of Eldros" />
+        <h2>The Realm of Eldros</h2>
+        <p>
+          From the Ember Mountains where dragons roost, to the Citadel of Flame
+          where knights rally, the lands of Eldros tremble beneath the march of
+          Vaelthorn's army. Ancient shrines hold forgotten wisdom, and war drums
+          echo across forest and stone. Kai must traverse this world—seeking
+          lost relics, long-lost truths, and the strength to unite those who
+          once stood apart.
+        </p>
+      </section>
+    </main>
+
+    <!-- Semantic aside element for supplementary content -->
+    <aside class="items">
+      <!-- Using h2 for proper heading hierarchy under main heading -->
+      <h2 class="visually-hidden">Treasure Chests</h2>
+      
+      <article class="item-golden-sun">
+        <h3>Golden Sun Chest</h3>
+        <!-- Accessible alt text for treasure chest image -->
+        <img src="./assets/images/goldenSunChest.jpg" alt="Golden Sun Chest - ornate golden chest containing valuable treasures and mystical items" />
+        <ul>
+          <li>+500 Gold</li>
+          <li>+2 Strength Potion</li>
+          <li>Mystic Amulet</li>
+        </ul>
+      </article>
+
+      <article class="item-frostbite-chest">
+        <h3>Frostbite Chest</h3>
+        <!-- Accessible alt text for ice-themed chest -->
+        <img src="./assets/images/frostbiteChest.jpg" alt="Frostbite Chest - ice-blue chest containing frozen treasures and arctic weapons" />
+        <ul>
+          <li>+300 Gold</li>
+          <li>Ice Crystal</li>
+          <li>Frozen Blade</li>
+        </ul>
+      </article>
+
+      <article class="item-mystic-chest">
+        <h3>Mystic Chest</h3>
+        <!-- Accessible alt text for magical chest -->
+        <img src="./assets/images/mysticChest.jpg" alt="Mystic Chest - enchanted chest glowing with arcane energy, containing magical artifacts" />
+        <ul>
+          <li>+200 Gold</li>
+          <li>Ancient Rune</li>
+          <li>Arcane Staff</li>
+        </ul>
+      </article>
+    </aside>
+
+    <!-- Semantic footer element -->
+    <footer class="footer">
+      <h2>Made with ⚔️ by UCF</h2>
+      <p>&copy; 2025 Knights of the Eternal Flame, Inc.</p>
+    </footer>
+  </body>
+</html>
