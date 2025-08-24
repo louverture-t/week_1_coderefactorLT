@@ -14,3 +14,7 @@ In terms of accessibility:
 CSS
 1. CSS optimization comments added for clarity
 2. Efficient and organized CSS
+
+https://github.com/louverture-t/week_1_coderefactorLT
+And
+https://louverture-t.github.io/week_1_coderefactorLT/
